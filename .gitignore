@@ -1,0 +1,27 @@
+# Dataset (Excluding large local data for fast deployment)
+Data/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Metadata/Local tools
+evaluate_model.py
+retrain_model.py
+.venv
+.vscode/
+.idea/
+
+# Weights (Normally excluded if too large, but keeping new v2 model for deployment)
+# weights/modelnew.h5
+# !weights/model_new_v2.h5
