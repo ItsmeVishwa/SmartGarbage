@@ -25,12 +25,10 @@ html_temp = '''
     <center><h3 style="color: #008080; margin-top: -20px">Check the type here </h3></center>
     </div>
     '''
-st.set_option('deprecation.showfileUploaderEncoding', False)
 st.markdown(html_temp, unsafe_allow_html=True)
 opt = st.selectbox("How do you want to upload the image for classification?\n", ('Please Select', 'Upload image via link', 'Upload image from device'))
 if opt == 'Upload image from device':
     file = st.file_uploader('Select', type = ['jpg', 'png', 'jpeg'])
-    st.set_option('deprecation.showfileUploaderEncoding', False)
     if file is not None:
         image = Image.open(file)
 
